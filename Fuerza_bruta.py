@@ -1,9 +1,24 @@
 from string import ascii_letters , digits
 from itertools import product
 
+
+"""
+ * @brief Realizado el 06/06/2022
+ * Osnaya Martinez Emmanuel
+ * Palacios Barcelos Juan Antonio
+ * Romero Molina David
+ * Vigi Garduño Marco Alejandro
+"""
+
+
 #Concatenar letas y dígitos en una sola cadena
 caracteres = ascii_letters+digits
 
+"""
+ * @brief Funcion que mediante fuerza bruta, encuentra la contraseña
+ * @param con recibe la contraseña a buscar
+ """
+ 
 def buscador(con):
     
     #Archivo con todas las combinaciones generadas
@@ -26,7 +41,8 @@ def buscador(con):
     else:
         print('Ingresa una contraseña que contenga de 3 a 4 caracteres')
         
-        
+
+#Prueba del calculo e impresion en pantalla    
 from time import time
 t0 = time() 
 con = 'H0l4'
